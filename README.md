@@ -1,103 +1,103 @@
 # KidsPexeso
 
-Jednoduchá hra Pexeso pro jednoho hráče vytvořená v Avalonia UI.
+A simple single-player memory matching game built with Avalonia UI.
 
-## Spuštění
+## Run the game
 
-V terminálu otevři složku projektu a spusť:
+Open a terminal in the project folder and run:
 
 ```bash
 dotnet run
 ```
 
-Pro spuštění již sestavené verze:
+To run an already built version:
 
 ```bash
 dotnet run --no-build
 ```
 
-## Jak hrát
+## How to play
 
-1. Na úvodní obrazovce vyber velikost hrací plochy.
-2. Kliknutím na kartu ji otoč a zapamatuj si zvířátko.
-3. Klikni na druhou kartu.
-4. Pokud jsou zvířátka stejná, dvojice zůstane odkrytá a získáš 100 bodů.
-5. Pokud se zvířátka liší, obě karty zůstanou chvíli odkryté a potom se otočí zpět.
-6. Během vyhodnocování dvojice nelze otáčet další karty.
-7. Hra končí po nalezení všech dvojic.
+1. Choose a board size on the start screen.
+2. Click a card to reveal its animal.
+3. Click a second card.
+4. If the animals match, the pair stays visible and you earn 100 points.
+5. If they do not match, both cards remain visible briefly and then turn back over.
+6. No other cards can be opened while a pair is being checked.
+7. The game ends when all pairs have been found.
 
-## Velikosti hry
+## Board sizes
 
 ### 4 × 4
 
-- 16 karet
-- 8 dvojic
-- používá prvních 8 zvířátek ze seznamu
-- větší karty vhodné pro menší děti
+- 16 cards
+- 8 pairs
+- uses the first 8 animals in the list
+- larger cards, suitable for younger children
 
 ### 8 × 8
 
-- 64 karet
-- 32 dvojic
-- používá všech 32 zvířátek
-- karty jsou menší, aby se celá hra vešla do okna; v případě potřeby je možné plochu posouvat
+- 64 cards
+- 32 pairs
+- uses all 32 animals
+- the board is larger; scrollbars are available if the window or screen is too small
 
-## Skóre a čas
+## Score and timer
 
-- správná dvojice: `+100 bodů`
-- chybný pokus: `-10 bodů`
-- skóre nikdy neklesne pod nulu
-- čas začíná běžet po spuštění hry
-- nahoře se zobrazuje skóre, počet nalezených dvojic a čas
+- correct pair: `+100 points`
+- incorrect attempt: `-10 points`
+- the score never goes below zero
+- the timer starts when a game begins
+- the left sidebar shows the score, matched pairs, and elapsed time
 
-## Ovládání
+## Controls
 
-- **Startovní obrazovka:** vyber `4 × 4` nebo `8 × 8`.
-- **Herní obrazovka:** klikáním otáčej karty.
-- **Začátek:** ukončí aktuální hru a vrátí se na výběr velikosti.
-- **Nová hra:** po dokončení začne novou hru od výběru velikosti.
+- **Start screen:** choose `4 × 4` or `8 × 8`.
+- **Game screen:** click cards to reveal them.
+- **Back to start:** ends the current game and returns to board selection.
+- **New game:** after winning, returns to board selection.
 
-## Zvířátka
+## Animals
 
-Ve hře jsou tato zvířátka, každé v jedné dvojici:
+The game currently contains these animals, each used as one matching pair:
 
-1. 🐴 Koník
-2. 🐔 Kuře
-3. 🐶 Pes
-4. 🐱 Kočka
-5. 🐷 Prasátko
-6. 🐮 Kravička
-7. 🐐 Koza
-8. 🐓 Kohout
-9. 🕊️ Holub
-10. 🐹 Křeček
-11. 🐊 Krokodýl
-12. 🦒 Žirafa
-13. 🐻 Medvěd
-14. 🐯 Tygr
-15. 🦁 Lev
-16. 🐒 Opice
-17. 🦍 Gorila
+1. 🐴 Horse
+2. 🐔 Chick
+3. 🐶 Dog
+4. 🐱 Cat
+5. 🐷 Pig
+6. 🐮 Cow
+7. 🐐 Goat
+8. 🐓 Rooster
+9. 🕊️ Dove
+10. 🐹 Hamster
+11. 🐊 Crocodile
+12. 🦒 Giraffe
+13. 🐻 Bear
+14. 🐯 Tiger
+15. 🦁 Lion
+16. 🐒 Monkey
+17. 🦍 Gorilla
 18. 🦧 Orangutan
-19. 🙈 Opice se zakrytýma očima
-20. 🙉 Opice se zakrytýma ušima
-21. 🙊 Opice se zakrytými ústy
-22. 🦆 Kachna
-23. 🐘 Slon
+19. 🙈 Monkey covering its eyes
+20. 🙉 Monkey covering its ears
+21. 🙊 Monkey covering its mouth
+22. 🦆 Duck
+23. 🐘 Elephant
 24. 🦓 Zebra
-25. 🦛 Hroch
-26. 🦏 Nosorožec
-27. 🐪 Velbloud
-28. 🦘 Klokan
+25. 🦛 Hippopotamus
+26. 🦏 Rhinoceros
+27. 🐪 Camel
+28. 🦘 Kangaroo
 29. 🐼 Panda
 30. 🐨 Koala
-31. 🦊 Liška
-32. 🐺 Vlk
+31. 🦊 Fox
+32. 🐺 Wolf
 
-Zvířátka jsou zatím použita jako emoji, takže aplikace nepotřebuje stahovat žádné obrázkové soubory. Později je možné emoji nahradit vlastními obrázky zvířat.
+The animals are currently represented by emoji, so the application does not need to download image files. They can be replaced with custom animal illustrations later.
 
-## Technické požadavky
+## Requirements
 
 - .NET 10
 - Avalonia UI 12.1.2
-- desktopový systém podporující Avalonia UI
+- a desktop operating system supported by Avalonia UI
