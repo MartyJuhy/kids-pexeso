@@ -2,6 +2,8 @@
 
 Jednoduchá hra Pexeso pro jednoho hráče vytvořená v Avalonia UI.
 
+Vytvořil **Martin Juhasz**.
+
 ## Spuštění
 
 V terminálu otevři složku projektu a spusť:

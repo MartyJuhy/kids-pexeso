@@ -2,6 +2,8 @@
 
 A simple single-player memory matching game built with Avalonia UI.
 
+Created by **Martin Juhasz**.
+
 ## Run the game
 
 Open a terminal in the project folder and run:
