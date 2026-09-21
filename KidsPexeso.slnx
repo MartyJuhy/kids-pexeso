@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KidsPexeso.Cli/KidsPexeso.Cli.csproj" />
+  <Project Path="KidsPexeso.csproj" />
+</Solution>
